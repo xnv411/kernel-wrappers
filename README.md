@@ -5,7 +5,7 @@ A small header file containing RAII wrappers for the windows kernel.
 > This library is NOT production ready, feel free to create PRs that would make it stable and cleaner.
 
 ## Usage
-First, you have to override placement new/delete. It's fairly easy, and the signature should be likewise this:
+First, you have to override placement new/delete. It's fairly easy, and the signature should look this:
 ```cpp
 void* __cdecl operator new(size_t size, const bool& paged, ULONG tag = detail::DRIVER_TAG);
 void* __cdecl operator new[](size_t size, const bool& paged, ULONG tag = detail::DRIVER_TAG);
