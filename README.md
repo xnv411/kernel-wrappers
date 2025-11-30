@@ -2,7 +2,7 @@
 A small header file containing RAII wrappers for the windows kernel.
 
 > [!WARNING]
-> This library is NOT production ready, help would be welcome to make it stable and cleaner.
+> This library is NOT production ready, feel free to create PRs that would make it stable and cleaner.
 
 ## Usage
 First, you have to override placement new/delete. It's fairly easy, and the signature should be likewise this:
